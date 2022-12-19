@@ -1,0 +1,47 @@
+li {
+    list-style: none;
+}
+
+header {
+    background-color: #ffffff;
+    height: 100px;
+}
+
+.header-logo {
+    color: #258cc3;
+}
+
+.header-list {
+    float: right;
+}
+
+.header-list li {
+    font-size: 16px;
+    float: left;
+    padding-top: 39px;
+    padding-right: 20px;
+}
+
+.contents {
+    text-align: center;
+}
+
+.copy-container {
+    text-align: center;
+}
+
+.contents-form {
+    text-align: center;
+}
+
+.footer {
+    width: 1200px;
+    height: 116px;
+    background-color: #717171;
+}
+
+.footer-logo {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+}
