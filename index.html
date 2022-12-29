@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Title</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<header>
-    <div class="header-logo">LOGO IMAGE</div>
+<header class="header">
+    <div class="header-logo">
+        <img src="logo.svg" alt="logo">
+    </div>
     <div class="header-list">
         <ul>
             <li>ホーム</li>
@@ -19,18 +21,44 @@
 
 <div class="main">
     <div class="copy-container">
-        <h2>
-            サンプルサンプルサンプル、
-            <p>サンプルサンプル。</p>
-        </h2>
+        <div class="main-visual">
+            <h2>
+                <span>サンプルサンプルサンプル、</span><br>
+                <span>サンプルサンプル。</span>
+            </h2>
+        </div>
     </div>
 
     <div class="contents">
         <h3>お知らせ</h3>
+        <div class="contents-detail">
+            <hr>
+            <p class="year">0000/00/00</p>
+            <p class="letter">0000年度の採用情報を公開しました。</p>
+            <hr>
+            <p class="year">0000/00/00</p>
+            <p class="letter">長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合</p>
+            <hr>
+            <p class="year">0000/00/00</p>
+            <p class="letter">0000年度の事例を更新しました</p>
+            <hr>
+            <p class="year">0000/00/00</p>
+            <p class="letter">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+            <hr>
+            <!--            お知らせの内容を左付けしてない-->
+        </div>
     </div>
 
     <div class="contents-form">
+        <div class="contact-bg">
+            <img src="contact-bg_pc.png" alt="contact">
+        </div>
         <h3 class="contact">お問い合わせ</h3>
+        <div class="btn">
+            <img src="mail.svg" alt="mail">
+            <a href="#" class="form">お問い合せフォームはこちら</a>
+        </div>
+        <p>※3営業日以内の返信となります。ご了承ください。</p>
     </div>
 </div>
 
