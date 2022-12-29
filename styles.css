@@ -2,27 +2,32 @@ li {
     list-style: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     background-color: #ffffff;
     height: 100px;
     display: flex;
     justify-content: space-between;
+    margin: 0 100px;
 }
 
 .header-logo {
-    line-height: 115px;
+    line-height: 120px;
 }
 
 .header-logo img {
-    width: 250px;
-    height: 30px;
+    width: 309px;
+    height: 43px;
 }
 
 .header-list {
-    line-height: 68px;
+    line-height: 100px;
     margin-right: 0;
     margin-left: auto;
-    /*なぜmargin16px入っちゃってるんだろ*/
 }
 
 .header-list li {
@@ -31,7 +36,11 @@ li {
     display: inline-block;
 }
 
-.header-list ul:hover {
+.header-list li:last-child {
+    padding-right: 0;
+}
+
+.header-list li:hover {
     text-decoration: underline;
     text-decoration-color: #52A3EE;
 }
@@ -60,8 +69,10 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 130.02%;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     font-style: normal;
+    font-size: 40px;
+    white-space: nowrap;
 }
 
 .contents {
@@ -69,8 +80,18 @@ li {
     position: relative;
 }
 
+.contents:after {
+
+}
+
+.contents-detail {
+    width: 1000px;
+    margin: 0 100px;
+}
+
 .year, .letter {
     display: inline-block;
+    padding: 31px 25px;
 }
 
 .year {
@@ -80,7 +101,6 @@ li {
 
 .letter {
     overflow-wrap: break-word;
-    margin-right: 125px;
 }
 
 .contents h3 {
@@ -92,7 +112,10 @@ li {
 .contents hr {
     opacity: 0.2;
     width: 1000px;
+}
 
+.contents hr:first-child {
+    margin-top: 40px;
 }
 
 .contents-form {
@@ -116,17 +139,31 @@ li {
     background-color: #00D3C7;
     font-size: 20px;
     display: inline-block;
-}
-
-.btn img {
-    margin-right: 60px;
-    margin-top: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 684px;
+    height: 106px;
 }
 
 .form {
     text-decoration: none;
     color: #FFFFFF;
+    line-height: 26px;
+    background-color: #00D3C7;
+    margin: 38px;
+    position: relative;
+
 }
+
+.btn img {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
 
 .footer {
     width: 1200px;
